@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ProductServletURL" method="POST">
+            <table>
+                <tr>
+                    <td>productName</td>
+                    <td><input type="text" name="productName"></td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td><input type="text" name="image"></td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td><input type="text" name="price"></td>
+                </tr>
+                <tr>
+                    <td>quantity</td>
+                    <td><input type="text" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td>categoryID</td>
+                    <td>
+                        <select name="categoryID">
+                            <option value="C001">Điện thoại</option>
+                            <option value="C002">Máy tính</option>
+                            <option value="C003">Phụ kiện</option>
+                            <option value="C004">Đồ gia dụng</option>
+                            <option value="C005">Thời trang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>importDate</td>
+                    <td><input type="date" name="importDate"></td>
+                </tr>
+                <tr>
+                    <td>usingDate</td>
+                    <td><input type="date" name="usingDate"></td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>
+                        <input type="radio" name="status" value="1">Active
+                        <input type="radio" name="status" value="0">Deactive
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="add product"></td>
+                    <td><input type="reset" value="Reset">
+                        <input type="hidden" name="service" value="addProduct">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

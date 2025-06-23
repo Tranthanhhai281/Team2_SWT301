@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="jsp/MyJSP.jsp">Open MyJSP</a></p>
+        
+        <p><a href="ProductServlet_JSP?service=listProduct">List of Product JSP</a></p>
+        
+        <p><a href="UserServlet_JSP?service=listUser">List of User JSP</a></p>
+        
+        <p><a href="ProductServlet_JSTL?service=listProduct">List of Product JSTL</a></p>
+        
+        <p><a href="ProductServletURL?service=listProduct">List of Products</a></p>
+        
+        <!--<p><a href="CategoryServletURL?service=listCategory">List of Category</a></p>-->
+  
+        <p><a href="CategoryServlet_JSP?service=listCategory">List of Category JSP</a></p>
+        
+        <p><a href="RoleServlet_JSP?service=listRole">List of Role JSP</a></p>
+        
+        <p><a href="OrderServlet_JSP?service=listOrder">List of Order JSP</a></p>
+        
+        <p><a href="OrderDetailServlet_JSP?service=listOrderDetail">List of OrderDetail JSP</a></p>
+        
+        <!--<p><a href="ProductServletURL?service=deleteProduct&pId=">Delete</a></p>-->
+        
+<!--        <p><a href="insertProduct.html">Insert Products</a></p>
+-->        <form action="LoginServlet" method="POST">
+            UserID: <input type="text" name="userID" required=""><br/><br/>
+            Password: <input type="password" name="password" required=""><br/><br/>
+            <input type="submit" name="submit" value="Login"/>
+            <input type="reset" value="Reset"/>
+        </form><!--
+
+        <form action="ProductServletURL">
+            <p>Search by name:
+                <input type="text" name="productName">
+                <input type="submit" name="submit" value="Search">
+                <input type="reset" value="Reset">
+                <input type="hidden" name="service" value="listProduct">
+            </p>
+        </form>-->
+    </body>
+</html>
